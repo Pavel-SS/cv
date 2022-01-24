@@ -1,0 +1,14 @@
+.nav { 
+    display: flex;
+    justify-content: space-between;
+    min-width: 360px;
+    align-items:center;
+    height: 100%;
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: azure;
+    }
+}
