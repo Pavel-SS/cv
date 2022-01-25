@@ -1,0 +1,18 @@
+.about_me{
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        border: 2px solid black;
+    }
+    &__text{
+        max-width: 250px;
+        background-color: grey;
+        align-self: center;
+    }
+    &__foto{
+        width: 250px;
+        height: 100%;
+        background-color: rgb(85, 59, 59);
+    }
+}
