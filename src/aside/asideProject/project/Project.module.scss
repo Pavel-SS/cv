@@ -1,0 +1,33 @@
+.project{
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    flex:0 0 45%;
+    border: 1px solid black;
+    &__img{
+        position: relative;
+        background: url(https://ru.ehu.lt/wp-content/uploads/2018/10/ac0bdf15-b265-4f4b-aa52-2a78cfa60ce2-1.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 300px;
+    }
+    &__btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color:cadetblue;
+        cursor: pointer;
+    }
+    &__txt{
+        padding: 5px 10px;
+        text-align:left;
+        border-top: 1px solid black;
+        width: 100%;
+        box-sizing:border-box;
+    }
+    
+}
