@@ -1,0 +1,22 @@
+.aside{
+    &__location_block{
+        
+        h2{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        button{
+            position: relative;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: red;
+            border-radius: 15px;
+            border: none;
+            text-align: center;
+            height: 25px;
+            width: 150px;
+            cursor: pointer;
+        }
+    }
+}
