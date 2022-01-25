@@ -1,5 +1,41 @@
 .aside{
-    padding: 0 20px; 
-    background-color: red;
-    width: 100%;
+    padding: 40px 0px; 
+
+    &__block{
+        &_red{
+            background-color: red;
+        }
+        &_green{
+            background-color: green;
+        }
+        &_blue{
+            background-color: blue;
+        }
+        &_orange{
+            background-color: orange;
+        }
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border: 2px solid black;
+
+    }
+    &__title{
+        border-bottom: 1px solid black;
+        text-align: center;
+        min-height: 70px;
+        h2{
+            margin: 0px;
+            background-color: grey;
+            line-height: 32px;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
