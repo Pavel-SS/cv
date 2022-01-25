@@ -14,6 +14,9 @@
         &_orange{
             background-color: orange;
         }
+        &_aqua{
+            background-color:aqua;
+        }
     }
 
     &__container{
@@ -24,10 +27,12 @@
 
     }
     &__title{
+        position: relative;
         border-bottom: 1px solid black;
         text-align: center;
         min-height: 70px;
         h2{
+            position: relative;
             margin: 0px;
             background-color: grey;
             line-height: 32px;
