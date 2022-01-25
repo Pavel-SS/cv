@@ -3,6 +3,8 @@ import s from './../aside/Aside.module.scss'
 import { AsideAboutMe } from "../aside/asideAboutMe/AsideAboutMe";
 import { AsideSkills } from "../aside/asideSkills/AsideSkills";
 import { AsideProject } from "../aside/asideProject/AsideProject";
+import { AsideLocation } from "../aside/asideLocation/AsideLocation";
+
 export type AsideStyleType = {
     className: string
 }
@@ -12,7 +14,7 @@ export const Main = () => {
             <AsideAboutMe className= {`${s.aside} ${s.aside__block_red}`}/>
             <AsideSkills className= {`${s.aside} ${s.aside__block_green}`}/>
             <AsideProject className= {`${s.aside} ${s.aside__block_blue}`}/>
-
+            <AsideLocation className={`${s.aside} ${s.aside__block_orange}`}/>
         </main>        
     )
 }
