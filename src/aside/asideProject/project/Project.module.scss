@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     box-sizing: content-box;
-    flex:0 0 45%;
+    flex:1 2 45%;
     border: 1px solid black;
+    min-width: 270px;
     &__img{
         position: relative;
         background: url(https://ru.ehu.lt/wp-content/uploads/2018/10/ac0bdf15-b265-4f4b-aa52-2a78cfa60ce2-1.jpg) 50% 50% no-repeat;
         background-size: cover;
-        max-width: 100%;
         height: 300px;
     }
     &__btn{
@@ -19,8 +19,17 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color:cadetblue;
+        border: none;
+        background-color:rgba(50, 117, 119, 0.658);
         cursor: pointer;
+        &:hover{
+        background: url(https://w7.pngwing.com/pngs/1020/638/png-transparent-computer-icons-arrow-massage-chair-human-back-play-stop-angle-triangle-number.png);
+
+        background-size:cover;
+        }
+        &:active{
+            background:rgba(160, 60, 60, 0.8);  
+        }
     }
     &__txt{
         padding: 5px 10px;
