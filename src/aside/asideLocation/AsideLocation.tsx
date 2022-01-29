@@ -10,9 +10,8 @@ export const AsideLocation = (props: AsideStyleType) => {
              <div className={`section  ${s.aside__container}`}>
                    <div className={`${style.aside__location_block} ${s.aside__title}`}>
                        <h2>Looking into remote work options</h2>
-                        <button>hire me</button>
-                   </div>
-                    
+                        <button className={s.aside__btn}>hire me</button>
+                   </div> 
             </div>
         </aside>
     )
