@@ -1,14 +1,17 @@
 .nav { 
     display: flex;
     justify-content: space-between;
-    min-width: 360px;
+    min-width: 270px;
     align-items:center;
     height: 100%;
     outline: 1px solid #fff;
     outline-offset: -1px;
+    gap: 2%;
     a{
         text-align: center;
         text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
         color: azure;
     }
 }
