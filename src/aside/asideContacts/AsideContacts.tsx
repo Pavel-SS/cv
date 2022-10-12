@@ -6,7 +6,7 @@ import style from './AsideContacts.module.scss';
 
 export const AsideContacts = (props: AsideStyleType) => {
     return (
-        <aside className={props.className}>
+        <aside className={props.className} id={'contacts'}>
             <form className={`section ${s.aside__container}`}>
                 <fieldset className={`${style.aside_contacts}`}>
                     <legend>Contacts</legend>

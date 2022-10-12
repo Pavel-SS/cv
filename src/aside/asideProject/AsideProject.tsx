@@ -6,7 +6,7 @@ import { Project } from "./project/Project";
 
 export const AsideProject = (props: AsideStyleType) => {
     return (
-        <aside className={props.className}>
+        <aside className={props.className} id={'project'}>
             <div className={`section ${s.aside__container}`}>
                 <div className={s.aside__title}>
                     <h2>My project</h2>

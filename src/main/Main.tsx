@@ -8,6 +8,7 @@ import { AsideContacts } from "../aside/asideContacts/AsideContacts";
 
 export type AsideStyleType = {
     className: string
+    id?: string
 }
 
 export const Main = () => {

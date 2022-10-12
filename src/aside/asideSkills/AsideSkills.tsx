@@ -6,7 +6,7 @@ import { Skill } from "./skill/Skill";
 
 export const AsideSkills = (props: AsideStyleType) => {
     return (
-        <aside className={props.className}>
+        <aside className={props.className} id={'skills'}>
             <div className={`section ${s.aside__container}`}>
                 <div className={s.aside__title}>
                     <h2>My skills</h2>
