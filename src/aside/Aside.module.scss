@@ -1,9 +1,8 @@
+@import "../style/mixin.scss";
+
 .aside, .footer {
     &__container {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        border: 2px solid black
+        @include flex(column, space-around, inherit, nowrap);
     }
     &__title {
         position: relative;
@@ -11,8 +10,7 @@
         min-height: 70px;
         h2 {
             position: relative;
-            margin: 0px;
-            background-color: grey;
+            margin: 0px;  
             line-height: 32px;
         }
     }
@@ -20,38 +18,25 @@
 
 .aside {
     padding: 40px 0px;
-    &__title {
-        border-bottom: 1px solid black;
-    }
+
     &__block {
         &_red {
             background-color: red;
         }
-
         &_green {
             background-color: green;
         }
-
         &_blue {
             background-color: blue;
         }
-
         &_orange {
             background-color: orange;
         }
-
         &_aqua {
             background-color: aqua;
         }
     }
-
-    &__item {
-        margin: 0 5%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 25px;
-    }
+ 
 
     &__btn {
         position: relative;
@@ -69,4 +54,73 @@
 }
 .footer {
     background-color:darkslategray;
+}
+
+
+//about_me
+
+.about_me {
+    &__container {
+        @include flex(row, center, inherit, wrap-reverse);
+    }
+
+    &__text{
+        margin: 0 35px;
+    }
+    &__descr{
+        text-align: end;
+    }
+
+    &__text {
+        max-width: 450px;
+        align-self: center;
+    }
+    &__foto {
+        max-width: 260px;
+        height: 330px;
+        object-fit: cover;
+        border: 10px solid #fff;
+        border-bottom: 50px solid #fff;
+        border-radius: 3px;
+        box-sizing: border-box;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+}
+
+//skills
+.list{
+    @include flex(row, center, inherit, wrap);
+    margin: 0 auto;
+    max-width: 900px;
+    gap: 50px;
+ }
+
+ //project
+ .project{
+    &__box{
+        @include flex(row, space-between, center, wrap);
+        width: 100%;
+        gap: 25px;
+    }
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    flex:1 2 45%;
+    border: 1px solid black;
+    min-width: 200px;
+    &__img{
+        position: relative;
+        background: url(https://ru.ehu.lt/wp-content/uploads/2018/10/ac0bdf15-b265-4f4b-aa52-2a78cfa60ce2-1.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+    
+    &__txt{
+        padding: 5px 10px;
+        text-align:left;
+        border-top: 1px solid black;
+        width: 100%;
+        box-sizing:border-box;
+    }
+    
 }
