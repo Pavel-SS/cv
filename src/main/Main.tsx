@@ -8,11 +8,12 @@ import { AsideContacts } from "../aside/asideContacts/AsideContacts";
 
 export type AsideStyleType = {
     className: string
+    id?: string
 }
 
 export const Main = () => {
     return (
-        <main>
+        <main style={{padding:'40px 0 0 0'}}>
             <AsideAboutMe className= {`${s.aside} ${s.aside__block_red}`}/>
             <AsideSkills className= {`${s.aside} ${s.aside__block_green}`}/>
             <AsideProject className= {`${s.aside} ${s.aside__block_blue}`}/>

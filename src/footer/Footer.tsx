@@ -3,9 +3,9 @@ import React from "react";
 import s from '././../aside/Aside.module.scss';
 import style from './Footer.module.scss'
 
-import GitHubLogo from './../icon/github.svg';
-import LinkedInLogo from './../icon/linkedin.svg';
-import TelegramLogo from './../icon/telegram.svg';
+import GitHubLogo from './../assets/icon/github.svg';
+import LinkedInLogo from './../assets/icon/linkedin.svg';
+import TelegramLogo from './../assets/icon/telegram.svg';
 
 export const Footer = () => {
     return (
