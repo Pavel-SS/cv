@@ -7,6 +7,7 @@ import { Project } from "./project/Project";
 import toDo from "./../../assets/img/todoList.webp"
 import card from "./../../assets/img/cards.webp"
 import chess from "./../../assets/img/chess.webp"
+import quiz from "./../../assets/img/quiz.webp"
 
 export const AsideProject: React.FC<AsideStyleType> = ( props ) => {
 return (
@@ -16,9 +17,10 @@ return (
             <h2>My project</h2>
         </div>
         <div className={s.project__box}>
-            <Project  urlPic={toDo} title={'ToDo lists'} urlProject={''}/>
-            <Project urlPic={card} title={'ToDo lists'} urlProject={''}/>
-            <Project urlPic={chess} title={'ToDo lists'} urlProject={''}/>
+            <Project urlPic={toDo} title={'ToDo-list'} urlProject={'https://pavel-ss.github.io/todo-list/#/login'}/>
+            <Project urlPic={card} title={'BrainStorm'} urlProject={'https://pavel-ss.github.io/card-nya/#/login'}/>
+            <Project urlPic={chess} title={'Chess'} urlProject={'https://pavel-ss.github.io/Chess/'}/>
+            <Project urlPic={quiz} title={'Quiz'} urlProject={'https://fabulous-frangipane-de4815.netlify.app/'}/>
         </div>
     </div>
 </aside>

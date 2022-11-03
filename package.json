@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://pavel-ss.github.io/cv",
   "dependencies": {
+    "@emailjs/browser": "^3.9.0",
     "@emotion/react": "^11.10.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
