@@ -1,11 +1,12 @@
 type ButtonPropsType = {
     url: string
     styleBtn: string
+    text?: string
 }
-export const Buttons: React.FC<ButtonPropsType> = ({url, styleBtn}) => {
+export const Buttons: React.FC<ButtonPropsType> = ({url, styleBtn, text}) => {
     return (
         <a href={url} className={styleBtn}>
-            <img src="" alt="" />
+            {text}
         </a>
     )
 }

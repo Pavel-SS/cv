@@ -9,7 +9,7 @@ import sn from '../navBurger/nav/nav.module.scss'
 export const Header = () => {
     return (
         <header className={style.header}>
-            <Nav style={`section ${sn.nav} ${style.nav_hidden}`}/>
+            <Nav style={`section ${sn.nav} ${style.nav_hidden} ${style.nav__txt}`}/>
             <NavBurger styleBurger={`section ${style.burger_hidden}`}/>
         </header>
     )
