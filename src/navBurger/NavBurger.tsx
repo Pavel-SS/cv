@@ -3,6 +3,8 @@ import { Nav } from "./nav/Nav"
 
 import style from "./navBurger.module.scss"
 import s from "./nav/nav.module.scss"
+import general from './../header/Header.module.scss'
+
 import { Burger } from "./burger/Burger"
 
 type NavBurgerPropsType = {
@@ -17,7 +19,7 @@ export const NavBurger: React.FC<NavBurgerPropsType> = ({styleBurger}) => {
     const hiddenMenu = () => {
         setOpenNav(false)
     }
-    const styleNav = `${style.navBurger} ${openNav ? style.isShow : ''}`
+    const styleNav = `${style.navBurger} ${openNav ? `${style.isShow} ${general.nav__txt}`: ''}`
 
     return (
         <section className={styleBurger}>

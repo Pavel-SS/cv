@@ -14,11 +14,11 @@ export type AsideStyleType = {
 export const Main = () => {
     return (
         <main style={{padding:'40px 0 0 0'}}>
-            <AsideAboutMe className= {`${s.aside} ${s.aside__block_red}`}/>
-            <AsideSkills className= {`${s.aside} ${s.aside__block_green}`}/>
-            <AsideProject className= {`${s.aside} ${s.aside__block_blue}`}/>
-            <AsideLocation className={`${s.aside} ${s.aside__block_orange}`}/>
-            <AsideContacts className={`${s.aside} ${s.aside__block_aqua}`}/>
+            <AsideAboutMe className= {`${s.aside} ${s.aside__block_grey}`}/>
+            <AsideSkills className= {`${s.aside} ${s.aside__block_dark}`}/>
+            <AsideProject className= {`${s.aside} ${s.aside__block_grey}`}/>
+            {/* <AsideLocation className={`${s.aside} ${s.aside__block_orange}`}/> */}
+            <AsideContacts className={`${s.aside} ${s.aside__block_dark}`}/>
         </main>        
     )
 }

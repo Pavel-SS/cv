@@ -1,4 +1,5 @@
 @import "../style/mixin.scss";
+@import "../style/variables.scss";
 section{ 
     @include flex(row, flex-end, stretch, nowrap);
     width: 100vw;
@@ -24,12 +25,13 @@ section{
         right: 10px;
         cursor: pointer;
         >div {
-            background-color: greenyellow;
+            background-color: #fff;
             height: 4px;
             width: 100%;
         }
     }
     .isShow {
-        transform: translate(0, 0); 
+        transform: translate(0, 0);
+        font-size: 1.6em !important;
     }
 }

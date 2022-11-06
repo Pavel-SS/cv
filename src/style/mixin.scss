@@ -5,3 +5,11 @@
     align-items: $alignItems;
     flex-wrap: $wrap;
   }
+
+@mixin text($fontFamily, $fontSize, $lineHeight, $fontWeight){
+  font-family:$fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  color: $textColor;
+}
