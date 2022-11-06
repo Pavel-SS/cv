@@ -1,10 +1,18 @@
 @import "../style/mixin.scss";
+@import "../style/variables.scss";
+
+h1,h2{
+    margin: 0;
+    padding: 0;
+}
 
 .aside, .footer {
     &__container {
         @include flex(column, space-around, inherit, nowrap);
     }
     &__title {
+        @include text($textFontFamily, 2em, 1.2, 400);
+        color: $textColor;
         position: relative;
         text-align: center;
         min-height: 70px;
@@ -20,20 +28,11 @@
     padding: 40px 0px;
 
     &__block {
-        &_red {
-            background-color: red;
+        &_grey {
+            background-color:$bgColorSecond;
         }
-        &_green {
-            background-color: green;
-        }
-        &_blue {
-            background-color: blue;
-        }
-        &_orange {
-            background-color: orange;
-        }
-        &_aqua {
-            background-color: aqua;
+        &_dark {
+            background-color: $bgColorFirst;
         }
     }
  
@@ -63,16 +62,24 @@
     &__container {
         @include flex(row, center, inherit, wrap-reverse);
     }
-
+    &__title{
+        @include text($textFontFamily, 3em, 1.2, 400);
+        color: $textColor;
+        text-align: center;
+        padding-bottom: 10px;
+    }
     &__text{
         margin: 0 35px;
     }
     &__descr{
+        @include text($textFontFamily, 0.8em, 1, 400);
+        color: $textColor;
+        text-transform: uppercase;
         text-align: end;
     }
 
     &__text {
-        max-width: 450px;
+        max-width: 600px;
         align-self: center;
     }
     &__foto {

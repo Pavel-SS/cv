@@ -5,6 +5,7 @@ import { AsideStyleType } from "../../main/Main";
 import style from './../../aside//Aside.module.scss'
 
 import  photo from './../../assets/img/photo.webp'
+
 export const AsideAboutMe: React.FC<AsideStyleType> = (props) => {
     return(
         <div className={props.className} id={'aboutMe'}>
