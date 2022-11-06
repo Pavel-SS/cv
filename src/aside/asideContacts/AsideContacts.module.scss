@@ -39,14 +39,12 @@ form {
             }
         }
     }
-    button {
-        
-    }
+
 }
 
 .message{
     &__txt{
-             display: block;
+            display: block;
             box-sizing: border-box;
             width: 100%;
             min-height: 120px;
