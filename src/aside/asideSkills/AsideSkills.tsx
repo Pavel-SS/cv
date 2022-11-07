@@ -1,4 +1,3 @@
-import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { AsideStyleType } from "../../main/Main";
 import s from '../../aside/Aside.module.scss'

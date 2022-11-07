@@ -14,9 +14,9 @@ export const Skill: React.FC<SkillPropsType> = ({urlPic, title}) => {
                 <Tilt 
                     glareEnable={true} 
                     glareMaxOpacity={1} 
-                    glareColor="#ffffff" 
+                    glareColor="#f2eecb" 
                     glarePosition="bottom" 
-                    glareBorderRadius="5px"
+                    glareBorderRadius="1px"
                     className={style.skill__tilt}
                 >
                    <img className={style.skill__img} src={urlPic} alt="img" /> 

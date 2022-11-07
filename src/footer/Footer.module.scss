@@ -1,20 +1,24 @@
+@import "../style/mixin.scss";
+@import "../style/variables.scss";
+
 .footer {
+    &__container{
+        position: relative;
+    }
     &__link{
         &_contacts{
             position: relative;
             margin: 0 auto;  
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 150px;
+            justify-content: flex-end;
+            // align-items: center;
+            width: 100%;
             list-style-type: none;
             padding-left: 0px;
-            
         }
-        
         &_contact{
             img{
-                width: 30px;
+                width: 35px;
             }
         }
     }
@@ -24,6 +28,7 @@ li:nth-child(2){
                 margin-left: 15px;        
 }
 p{
-    text-align: center;
+    color: $textColor;
+    text-align: right;
     margin-bottom: 0;
 }

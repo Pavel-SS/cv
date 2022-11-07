@@ -5,7 +5,6 @@ import { Main } from './main/Main';
 import { Footer } from './footer/Footer';
 //Style
 import '../src/style/GeneralStyle.scss'
-import './App.css';
 
 function App() {
   return (
