@@ -1,12 +1,16 @@
 @import "../style/mixin.scss";
 @import "../style/variables.scss";
 
+$offwhite: darken(white, 10%);
+$darkblue: rgb(50,50,60);
+
+
 h1,h2{
     margin: 0;
     padding: 0;
 }
 
-.aside, .footer {
+.aside {
     &__container {
         @include flex(column, space-around, inherit, nowrap);
     }
@@ -23,36 +27,72 @@ h1,h2{
         }
     }
 }
+.footer {
+    &__container {
+        @include flex(column, space-around, inherit, nowrap);
+    }
+    &__title {
+        @include text($textFontFamily, 1.1em, 1.5, 400);
+        color: $textColor;
+        position: relative;
+        text-align: center;
+        min-height: 35px;
+        h2 {
+            position: relative;
+            margin: 0px;
+            font-weight: 400;  
+        }
+    }
+}
 
 .aside {
     padding: 40px 0px;
 
     &__block {
         &_grey {
-            background-color:$bgColorSecond;
+            background:$bgColorSecond;
         }
         &_dark {
-            background-color: $bgColorFirst;
+            background: $bgColorFirst;
         }
     }
- 
 
     &__btn {
-        position: relative;
-        display: block;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: red;
-        border-radius: 15px;
-        border: none;
-        text-align: center;
-        height: 25px;
-        width: 150px;
+        @include text($textFontFamily, 1.4em, 1, 400);
+        color: $textColor;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background-color: transparent;
+        border-radius: 0.2em;
         cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        padding: .5em 2.5em .3em 2.5em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+      &:hover, &:focus {
+        outline: 0;
+      }
+        border-color: $borderColor;
+        color: $textColor;
+        box-shadow: 0 0 20px 20px  #141e30 inset, 0 0 0 0 #141e30;
+        -webkit-transition: all 250ms ease-in-out;
+        transition: all 200ms ease-in-out;
+      &:hover {
+        box-shadow: 0 0 12px 2px $borderColor inset, 0 0 10px 5px $borderColor;
+      }
     }
 }
 .footer {
-    background-color:darkslategray;
+    background: $bgColorSecond;
 }
 
 
@@ -82,12 +122,14 @@ h1,h2{
         max-width: 600px;
         align-self: center;
     }
+    &__tilt, &__foto {
+        height: 330px;
+    }
     &__foto {
         max-width: 260px;
-        height: 330px;
         object-fit: cover;
-        border: 10px solid #fff;
-        border-bottom: 50px solid #fff;
+        border: 5px solid $borderColor;
+        border-bottom: 50px solid $borderColor;
         border-radius: 3px;
         box-sizing: border-box;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
@@ -105,19 +147,26 @@ h1,h2{
  //project
  .project{
     &__box{
-        @include flex(row, space-between, center, wrap);
-        width: 100%;
-        gap: 25px;
-        flex:1 2 45%;
+        @include flex(row, space-around, center, wrap);
+        @include text($textFontFamily, 1.2em, 1, 400);
+        color: $textColor;
+        width: 50vw;
+        gap: 50px;
+        // flex:1 2 45%;
+        
+        span{
+            background-color:$borderColor;
+        }
     }
     display: flex;
     flex-direction: column;
     box-sizing: content-box;
-    min-width: 200px;
+    
     &__img{
         position: relative;
-        width: 35vw;
-        height:22vw;
+        width: 50vw;
+        height:30vw;
+        
         transition: transform 0.6s;
         &:hover{
             transform: scale(1.02);
@@ -129,23 +178,21 @@ h1,h2{
             object-fit: fill;
         }
         a{
-            color:rgba(0, 0, 0, 1);
+            color:$textColor;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 400;
             font-size: 3.5rem;
             text-align: center;
             display: none;
             transition: transform 0.6s;
         }
         &:hover a {
-            background-color: rgba(104, 104, 104, 0.685);
+            background-color: rgba(56, 55, 55, 0.8);
             width: 100%;
             height: 100%;
            display: flex;
            justify-content: center;
            align-items: center;
-           border-bottom: 2px solid rgba(0, 0, 0, 0.541);
-   
         }
     }
     &__btn{
@@ -158,11 +205,13 @@ h1,h2{
         padding: 0px;
         margin: 0px;
         text-align:center;
-        border-bottom: 3px solid black;
-        width: 100%;
+        border-bottom: 2px solid $borderColor;
+        width: 50vw;
         box-sizing:border-box;
         h3{
-            margin: 10px 0 2px 0px; 
+            margin: 10px 0 2px 0px;
+            font-size: 1.6em; 
+            font-weight: 400;
         }
     }
     

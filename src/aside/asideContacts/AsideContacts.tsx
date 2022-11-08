@@ -31,7 +31,7 @@ export const AsideContacts = (props: AsideStyleType) => {
                         <input type="email" name="e-mail" placeholder="company@domain.by" required />
                     </label>
                     <label>
-                        Phoe:
+                        Phone:
                         <input type="tel" name="tel" placeholder="+375(XX)XXX-XX-XX" required />
                     </label>
                     <label>

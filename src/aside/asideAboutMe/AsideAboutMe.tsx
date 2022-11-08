@@ -20,6 +20,7 @@ export const AsideAboutMe: React.FC<AsideStyleType> = (props) => {
                 </div>
                 <Flip duration={2500} delay={500} direction='horizontal'> 
                     <Tilt tiltEnable={false} 
+                        className={style.about_me__tilt}
                         glareEnable={true} 
                         glareMaxOpacity={0.5} 
                         glareColor="white" 

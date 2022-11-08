@@ -1,6 +1,10 @@
-$titleFontFamily: 'Kolker Brush', cursive;
+$inputFontFamily: 'Special Elite', cursive;
 $textFontFamily: 'IM Fell English SC', serif;
 
-$textColor: #fff;
-$bgColorFirst: #1f1f20;
-$bgColorSecond: #252527;
+$textColor: #f2eecb;
+$borderColor: #f2eecb;
+$bgColorFirst:  linear-gradient(180deg, #141e30, #243b55);
+$bgColorSecond: linear-gradient(to top, #141e30, #243b55);
+$bgColorNav: linear-gradient(180deg , #141e30, #243b55);
+
+$borderSize: 5px;
