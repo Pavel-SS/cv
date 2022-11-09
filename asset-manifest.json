@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.330021a2.css",
-    "main.js": "/cv/static/js/main.12e886dc.js",
+    "main.css": "/cv/static/css/main.f8f2b3a0.css",
+    "main.js": "/cv/static/js/main.202b9532.js",
     "static/js/787.a71561b8.chunk.js": "/cv/static/js/787.a71561b8.chunk.js",
     "static/media/cards.webp": "/cv/static/media/cards.1cc6d0be195a9f9661a2.webp",
     "static/media/chess.webp": "/cv/static/media/chess.ec425581039acc9ae28f.webp",
@@ -11,6 +11,7 @@
     "static/media/sass.svg": "/cv/static/media/sass.ec0325385cf56797fb644b3973cd7155.svg",
     "static/media/redux.svg": "/cv/static/media/redux.c363ac24cc9f34753f3c053e335cb1d6.svg",
     "static/media/react.svg": "/cv/static/media/react.109605227b804b2bbe955a22bd4fac25.svg",
+    "static/media/clipboard.svg": "/cv/static/media/clipboard.e9494f6f4e8d5599fd1a1dd5f76899b6.svg",
     "static/media/gulp.svg": "/cv/static/media/gulp.089ad6439960f1f7b04f91f74b169382.svg",
     "static/media/github.svg": "/cv/static/media/github.5d6b664664b59dfd468fadb886356abe.svg",
     "static/media/ts.svg": "/cv/static/media/ts.980118c18e36b9e254e7dbd3e3309026.svg",
@@ -23,12 +24,12 @@
     "static/media/figma.svg": "/cv/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/css.svg": "/cv/static/media/css.64fa1d1c4801d931c3717be71f6c020e.svg",
     "static/media/html.svg": "/cv/static/media/html.8ae3d4adcd70a1028a6377697d9f33b0.svg",
-    "main.330021a2.css.map": "/cv/static/css/main.330021a2.css.map",
-    "main.12e886dc.js.map": "/cv/static/js/main.12e886dc.js.map",
+    "main.f8f2b3a0.css.map": "/cv/static/css/main.f8f2b3a0.css.map",
+    "main.202b9532.js.map": "/cv/static/js/main.202b9532.js.map",
     "787.a71561b8.chunk.js.map": "/cv/static/js/787.a71561b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.330021a2.css",
-    "static/js/main.12e886dc.js"
+    "static/css/main.f8f2b3a0.css",
+    "static/js/main.202b9532.js"
   ]
 }
