@@ -15,33 +15,12 @@ import { Pagination, Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { dataProjects } from "./dataProject";
 
 
 export const AsideProject: React.FC<AsideStyleType> = ( props ) => {
 
-    const arrProjects = [
-        {
-            urlPic: toDo,
-            title: 'ToDo-list',
-            urlProject: 'https://pavel-ss.github.io/todo-list/#/login'
-        },
-        {
-            urlPic: card,
-            title: 'BrainStorm',
-            urlProject: 'https://pavel-ss.github.io/card-nya/#/login'
-        },
-        {
-            urlPic: chess,
-            title: 'Chess',
-            urlProject: 'https://pavel-ss.github.io/Chess/'
-        },
-        {
-            urlPic: quiz,
-            title: 'Quiz',
-            urlProject: 'https://fabulous-frangipane-de4815.netlify.app/'
-        }, 
-    ]
-    const items = arrProjects.map(item => {
+    const items = dataProjects.map(item => {
         return (
             <SwiperSlide>
                 <Project urlPic={item.urlPic} title={item.title} urlProject={item.urlProject}/>
@@ -55,12 +34,6 @@ return (
         <div className={s.aside__title}>
             <h2>My project</h2>
         </div>
-        {/* <div className={s.project__box}>
-            <Project urlPic={toDo} title={'ToDo-list'} urlProject={'https://pavel-ss.github.io/todo-list/#/login'}/>
-            <Project urlPic={card} title={'BrainStorm'} urlProject={'https://pavel-ss.github.io/card-nya/#/login'}/>
-            <Project urlPic={chess} title={'Chess'} urlProject={'https://pavel-ss.github.io/Chess/'}/>
-            <Project urlPic={quiz} title={'Quiz'} urlProject={'https://fabulous-frangipane-de4815.netlify.app/'}/>
-        </div> */}
         <Swiper
              slidesPerView={1}
              spaceBetween={30}
